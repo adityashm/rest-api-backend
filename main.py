@@ -10,7 +10,7 @@ import logging
 
 from models import Base, UserDB, ProductDB, OrderDB
 from schemas import (
-    UserCreate, UserResponse, ProductCreate, ProductResponse,
+    UserCreate, UserResponse, ProductCreate, ProductUpdate, ProductResponse,
     OrderCreate, OrderResponse, LoginRequest, TokenResponse
 )
 from auth import (
