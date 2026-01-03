@@ -46,6 +46,18 @@ app.add_middleware(
 
 security = HTTPBearer()
 
+@app.get("/")
+def root():
+    """Welcome endpoint"""
+    return {
+        "message": "REST API Backend",
+        "version": "1.0.0",
+        "docs": "/docs",
+        "auth": "/auth/register, /auth/login",
+        "products": "/products",
+        "orders": "/orders"
+    }
+
 def get_db():
     """Get database session"""
     db = SessionLocal()
