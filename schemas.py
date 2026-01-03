@@ -1,11 +1,11 @@
-from pydantic import BaseModel, EmailStr
+﻿from pydantic import BaseModel
 from typing import Optional
 from datetime import datetime
 
 # User Schemas
 class UserCreate(BaseModel):
     username: str
-    email: EmailStr
+    email: str
     password: str
     full_name: Optional[str] = None
 
@@ -15,7 +15,7 @@ class UserResponse(BaseModel):
     email: str
     full_name: Optional[str]
     created_at: datetime
-    
+
     class Config:
         from_attributes = True
 
@@ -40,7 +40,7 @@ class ProductResponse(BaseModel):
     quantity: int
     created_at: datetime
     updated_at: datetime
-    
+
     class Config:
         from_attributes = True
 
@@ -57,7 +57,7 @@ class OrderResponse(BaseModel):
     total_price: float
     status: str
     created_at: datetime
-    
+
     class Config:
         from_attributes = True
 
