@@ -1,9 +1,9 @@
-fastapi==0.104.1
-uvicorn==0.24.0
-pydantic==2.5.0
+fastapi==0.115.0
+uvicorn[standard]==0.32.1
+pydantic==2.10.5
 python-dotenv==1.0.0
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
-sqlalchemy==2.0.23
-pytest==7.4.3
-httpx==0.25.2
+sqlalchemy==2.0.36
+pytest==8.3.4
+httpx==0.28.1
